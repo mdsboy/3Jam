@@ -85,8 +85,8 @@ class Result {
             this.next = true;
         }
         if(inputkey.isDown("t")){
-            const txt = "";
-            const url = "http://n-a.rip/gamejam/eitango/";
+            const txt = "sinおえかきで" + Math.round(this.score) + "点だったよ！";
+            const url = "http://3jam0828.mds_boy.trap.show/";
             const tweeturl = `https://twitter.com/intent/tweet?hashtags=traP3jam&text=${encodeURIComponent(txt)}&url=${encodeURIComponent(url)}`;
             location.href = tweeturl;
         }
