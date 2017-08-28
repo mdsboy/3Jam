@@ -173,6 +173,7 @@ class Point {
         ctx.fillStyle = color;
         ctx.arc(this.x, this.y, 2, 0, Math.PI * 2, false);
         ctx.fill();
+        ctx.fillStyle = 'rgb(0, 0, 0)';
     }
 }
 
