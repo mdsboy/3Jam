@@ -104,7 +104,7 @@ class Game {
             this.hannin.draw(ctx);
             ctx.font = "80px 'Arial'";
             ctx.fillText("犯人はこの中に" + this.count[3] + "人います!!", 0, 100);
-            ctx.fillText("Tでツイート", 0, 300);
+            ctx.fillText("Tでツイート", 0, 200);
             //ctx.fillText("犯人はこの中に" + this.count[3] + "人います!!", 1050, 200 + i * 100);
         }
     }
