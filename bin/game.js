@@ -30,7 +30,7 @@ class Game {
         if(this.times == 4){
             if(ik.isDown("t")){
                 const txt = "犯人はこの中に" + this.count[3] + "人います!!";
-                const url = "http://3jam0828.mds_boy.trap.show/";
+                const url = "http://3jam1108.mds_boy.trap.show/";
                 const tweeturl = `https://twitter.com/intent/tweet?hashtags=traP3jam&text=${encodeURIComponent(txt)}&url=${encodeURIComponent(url)}`;
                 location.href = tweeturl;
             }
