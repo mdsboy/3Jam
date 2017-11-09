@@ -103,8 +103,15 @@ class Game {
         if(this.times == 4){
             this.hannin.draw(ctx);
             ctx.font = "70px 'Arial'";
-            ctx.fillText("犯人はこの中に" + this.count[3] + "人います!!", 0, 100);
+            ctx.fillStyle = "yellow";
+            ctx.fillText("犯人はこの中に" + this.count[3] + "人います!!", 0, 80);
+            ctx.strokeStyle = 'black';
+            ctx.strokeText("犯人はこの中に" + this.count[3] + "人います!!", 0, 80);
+            ctx.fillStyle = "blue";
             ctx.fillText("Tでツイート", 0, 200);
+            ctx.strokeStyle = "black";
+            ctx.strokeText("Tでツイート", 0, 200);
+            ctx.fillStyle = "black";
             //ctx.fillText("犯人はこの中に" + this.count[3] + "人います!!", 1050, 200 + i * 100);
         }
     }
