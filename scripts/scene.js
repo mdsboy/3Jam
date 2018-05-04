@@ -49,7 +49,7 @@ class Result extends Scene{
         //dm.Clear();
         dm.String(new Point(100, 230), "Score:" + this.score, "rgb(100,100,0)", 150);
         dm.String(new Point(100, 430), "Tでツイート", "rgb(0,100,100)", 100);
-        dm.String(new Point(100, 580), "Xで戻る", "rgb(100,0,0)", 100);
+        dm.String(new Point(100, 580), "Zで戻る", "rgb(100,0,0)", 100);
     }
 }
 
