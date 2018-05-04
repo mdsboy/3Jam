@@ -40,7 +40,7 @@ class Result extends Scene{
         }
         if(ik.isDown("t")){
             const txt = "Score:" + this.score;
-            const url = "http://3jam1108.mds_boy.trap.show/";
+            const url = "http://3jam0504.mds_boy.trap.show/";
             const tweeturl = `https://twitter.com/intent/tweet?hashtags=traP3jam&text=${encodeURIComponent(txt)}&url=${encodeURIComponent(url)}`;
             location.href = tweeturl;
         }
