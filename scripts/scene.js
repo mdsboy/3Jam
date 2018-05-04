@@ -39,7 +39,7 @@ class Result extends Scene{
             this.sm.scene = new Title(this.sm);
         }
         if(ik.isDown("t")){
-            const txt = "Score:" + this.score;
+            const txt = "「止まってほしい」で" + this.score + "点だったよ！";
             const url = "http://3jam0504.mds_boy.trap.show/";
             const tweeturl = `https://twitter.com/intent/tweet?hashtags=traP3jam&text=${encodeURIComponent(txt)}&url=${encodeURIComponent(url)}`;
             location.href = tweeturl;
