@@ -118,7 +118,7 @@ export default class Game extends SceneBase{
             }
             if(this.player.stop){
                 this.nokori --;
-                if(this.nokori < 0){
+                if(this.nokori <= 0){
                     this.end = true;
                 }
                 this.launched = false;
