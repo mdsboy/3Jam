@@ -65,10 +65,12 @@ export default class Game extends SceneBase{
             DrawManager.String(new Point(250, 400), "next:Z", 'rgb(100, 100, 255)', 78);
         }
         if(this.end){
-            DrawManager.String(new Point(200, 250), "GAME OVER", 'rgb(0, 0, 0)', 75);
-            DrawManager.String(new Point(200, 250), "GAME OVER", 'rgb(255, 0, 0)', 74);
-            DrawManager.String(new Point(250, 400), "tweet:T", 'rgb(0, 0, 0)', 80);
-            DrawManager.String(new Point(250, 400), "tweet:T", 'rgb(100, 100, 255)', 78);
+            DrawManager.String(new Point(200, 200), "GAME OVER", 'rgb(0, 0, 0)', 75);
+            DrawManager.String(new Point(200, 200), "GAME OVER", 'rgb(255, 0, 0)', 74);
+            DrawManager.String(new Point(230, 350), "SCORE:" + this.score, 'rgb(255, 0, 0)', 75);
+            DrawManager.String(new Point(230, 350), "SCORE:" + this.score, 'rgb(200, 200, 0)', 74);
+            DrawManager.String(new Point(250, 450), "tweet:T", 'rgb(0, 0, 0)', 80);
+            DrawManager.String(new Point(250, 450), "tweet:T", 'rgb(100, 100, 255)', 78);
         } else {
             this.player.Draw();
         }
