@@ -1,4 +1,4 @@
-import SceneManager from "./SceneManager.js";
+import SceneManager from "./sceneManager.js";
 
 onload = ()=>{
     SceneManager.Init();

@@ -85,7 +85,7 @@ export default class Game extends SceneBase{
         else if(this.end){
             if(InputKey.isKeyInput("t")){
                 const txt = "「じゅんばんとつげき」で" + this.score + "点だったよ！";
-                const url = "http://3jam0504.mds_boy.trap.show/";
+                const url = "http://3jam0617.mds_boy.trap.show/";
                 const tweeturl = `https://twitter.com/intent/tweet?hashtags=traP3jam&text=${encodeURIComponent(txt)}&url=${encodeURIComponent(url)}`;
                 location.href = tweeturl;
             }
