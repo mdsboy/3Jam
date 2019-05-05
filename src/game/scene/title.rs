@@ -23,8 +23,16 @@ impl Title {
         draw_text(
             ctx,
             "0和ゲーム",
-            Point::new(180.0, 450.0),
+            Point::new(180.0, 400.0),
             "180px 'ＭＳ Ｐゴシック'",
+            "black",
+        );
+
+        draw_text(
+            ctx,
+            "Zでスタート",
+            Point::new(350.0, 600.0),
+            "80px 'ＭＳ Ｐゴシック'",
             "black",
         );
     }
