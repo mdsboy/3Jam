@@ -1,7 +1,9 @@
 type: runtime
 
 startup: |
-  pacman -S rustup
+  yes | pacman -Sy rustup
+  rustup install stable
+  rustup default stable
   curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
   npm install
   npm run build
