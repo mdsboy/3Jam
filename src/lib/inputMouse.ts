@@ -1,4 +1,5 @@
 import Point from './point'
+import DrawManager from './drawManager';
 export class InputMouse {
   private static mouseInput: Array<boolean> = Array(2)
   private static mousePos: Point
@@ -37,7 +38,10 @@ document.onmouseup = () => {
 }
 
 document.ontouchstart = e => {
-  InputMouse.setMousePos(new Point(e.touches[0].clientX, e.touches[0].clientY))
+  const rect = DrawManager.canvas.getBoundingClientRect()
+  const x = e.targetTouches[0].pageX - rect.left;
+  const y = e.targetTouches[0].pageY - rect.top;
+  InputMouse.setMousePos(new Point(x, y))
   InputMouse.mouseDown()
 }
 

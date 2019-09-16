@@ -5,14 +5,14 @@ import Circle from './circle'
 
 export default class DrawManager {
   private static ctx: CanvasRenderingContext2D
+  public static canvas = document.createElement('canvas')
 
   public static init(width: number, height: number) {
-    const canvas = document.createElement('canvas')
-    canvas.width = width
-    canvas.height = height
-    document.body.appendChild(canvas)
+    this.canvas.width = width
+    this.canvas.height = height
+    document.body.appendChild(this.canvas)
 
-    const ctx = canvas.getContext('2d')
+    const ctx = this.canvas.getContext('2d')
 
     if (ctx) {
       this.ctx = ctx
