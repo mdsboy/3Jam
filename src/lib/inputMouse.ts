@@ -35,3 +35,12 @@ document.onmousedown = () => {
 document.onmouseup = () => {
   InputMouse.mouseUp()
 }
+
+document.ontouchstart = e => {
+  InputMouse.setMousePos(new Point(e.touches[0].pageX, e.touches[0].pageY))
+  InputMouse.mouseDown()
+}
+
+document.ontouchend = () => {
+  InputMouse.mouseUp()
+}
