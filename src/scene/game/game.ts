@@ -135,7 +135,7 @@ export default class Game implements SceneBase {
           this.target[1] -= 1
           this.checking.push([this.target[0], this.target[1]])
         } else if (this.isPrev(this.target[0], this.target[1] - 1)) {
-          this.target[1] += 1
+          this.target[1] -= 1
           this.checking.pop()
         }
       } else {
