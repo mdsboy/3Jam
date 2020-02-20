@@ -11,8 +11,8 @@ export default class Game implements SceneBase {
   private numbers: Array<Array<number>> = []
   private pos: Vec2 = Vec2.zero()
   private readonly size = 80
-  private readonly xnum = 40
-  private readonly ynum = 40
+  private readonly xnum = 50
+  private readonly ynum = 50
   private target: [number, number] = [this.xnum / 2, this.ynum / 2]
   private mode = false
   private checks: Array<[number, number]> = []
