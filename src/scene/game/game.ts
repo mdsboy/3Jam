@@ -72,8 +72,8 @@ export default class Game implements SceneBase {
       "time:"+String(Math.floor(this.time / 60)), this.size / 3 * 2, Color.black)
 
     const scorePos = new Vec2(50, 50).add(Camera.getCameraPos())
-    DrawManager.fillRect(new Rect(scorePos, 250, 70), Color.white)
-    DrawManager.strokeRect(new Rect(scorePos, 250, 70), new Color(255, 255, 0), 3)
+    DrawManager.fillRect(new Rect(scorePos, 300, 70), Color.white)
+    DrawManager.strokeRect(new Rect(scorePos, 300, 70), new Color(255, 255, 0), 3)
 
     DrawManager.string(scorePos.add(new Vec2(this.size/4, this.size/4*3)),
       "score:"+String(Math.floor(this.score)), this.size / 3 * 2, Color.black)
