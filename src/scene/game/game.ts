@@ -161,7 +161,7 @@ export default class Game implements SceneBase {
       this.checks = this.checks.concat(this.checking)
       this.checking = []
       this.mode = false
-      this.time += 5 * 60
+      this.time += 3 * 60
     }
     
     if (InputKey.isKeyPressed(KeyCode.Z) && this.nextOk(this.target[0], this.target[1])) {
