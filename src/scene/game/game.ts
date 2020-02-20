@@ -18,7 +18,7 @@ export default class Game implements SceneBase {
   private checks: Array<[number, number]> = []
   private checking: Array<[number, number]> = []
   private po = [2, 0, 2, 0, 0, 2, 2, 0]
-  private time = 1 * 60
+  private time = 10 * 60
   private score = 0
 
   constructor() {
@@ -78,7 +78,7 @@ export default class Game implements SceneBase {
     DrawManager.string(scorePos.add(new Vec2(this.size/4, this.size/4*3)),
       "score:"+String(Math.floor(this.score)), this.size / 3 * 2, Color.black)
 
-    if (this.time <= 0) {
+    if (this.time < 60) {
       const scorePos = new Vec2(425, 450).add(Camera.getCameraPos())
       DrawManager.fillRect(new Rect(scorePos, 250, 70), Color.white)
       DrawManager.strokeRect(new Rect(scorePos, 250, 70), Color.blue, 3)
@@ -89,7 +89,7 @@ export default class Game implements SceneBase {
   }
 
   public update(): SceneBase {
-    if (this.time <= 0){
+    if (this.time < 60){
       if(InputKey.isKeyDown(KeyCode.T)) {
         const txt = "「20200220」で" + this.score + "点だったよ！";
         const url = "http://3jam0220.mds_boy.trap.show/";
