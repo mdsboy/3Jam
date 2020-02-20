@@ -101,7 +101,7 @@ export default class Game implements SceneBase {
     }
     this.time --
 
-    if (InputKey.isKeyPressed(KeyCode.Right) && this.target[0] < this.xnum) {
+    if (InputKey.isKeyPressed(KeyCode.Right) && this.target[0] < this.xnum-1) {
       if (this.mode) {
         if (this.nextOk(this.target[0] + 1, this.target[1])) {
           this.target[0] += 1
@@ -142,7 +142,7 @@ export default class Game implements SceneBase {
         this.target[1] -= 1
       }
     }
-    if (InputKey.isKeyPressed(KeyCode.Down) && this.target[1] < this.ynum) {
+    if (InputKey.isKeyPressed(KeyCode.Down) && this.target[1] < this.ynum-1) {
       if (this.mode) {
         if (this.nextOk(this.target[0], this.target[1] + 1)) {
           this.target[1] += 1
