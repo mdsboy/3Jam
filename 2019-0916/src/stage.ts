@@ -183,7 +183,7 @@ private score: number
         InputMouse.isMouseLeftDown() &&
         this.tweet.inPoint(InputMouse.getMousepos())) {
         const txt = "「新しい順に選ぶ」で" + this.score + "点だったよ！";
-        const url = "http://3jam0916.mds_boy.trap.show/";
+        const url = "https://mdsboy.github.io/3Jam/2019-0916/public";
         const tweeturl = `https://twitter.com/intent/tweet?hashtags=traP3jam&text=${encodeURIComponent(txt)}&url=${encodeURIComponent(url)}`;
         location.href = tweeturl;
       }

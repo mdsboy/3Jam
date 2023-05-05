@@ -40,7 +40,7 @@ class Result extends Scene{
         }
         if(ik.isDown("t")){
             const txt = "「止まってほしい」で" + this.score + "点だったよ！";
-            const url = "http://3jam0504.mds_boy.trap.show/";
+            const url = "https://mdsboy.github.io/3Jam/2018-0504/";
             const tweeturl = `https://twitter.com/intent/tweet?hashtags=traP3jam&text=${encodeURIComponent(txt)}&url=${encodeURIComponent(url)}`;
             location.href = tweeturl;
         }

@@ -92,7 +92,7 @@ export default class Game implements SceneBase {
     if (this.time < 60){
       if(InputKey.isKeyDown(KeyCode.T)) {
         const txt = "「20200220」で" + this.score + "点だったよ！";
-        const url = "http://3jam0220.mds_boy.trap.show/";
+        const url = "https://mdsboy.github.io/3Jam/2020-0220/public";
         const tweeturl = `https://twitter.com/intent/tweet?hashtags=traP3jam&text=${encodeURIComponent(txt)}&url=${encodeURIComponent(url)}`;
         location.href = tweeturl;
       }
