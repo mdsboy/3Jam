@@ -4,7 +4,6 @@ traP3Jamとは？
 https://trap.jp/post/174/
 
 
-
 ## 制作物
 
 ### sinおえかき
@@ -27,11 +26,10 @@ https://mdsboy.github.io/3Jam/2018-0617/
 
 https://mdsboy.github.io/3Jam/2019-0505/
 
-
 ### 新しい順に選ぶ
 
-https://mdsboy.github.io/3Jam/2019-0916/
+https://mdsboy.github.io/3Jam/2019-0916/public
 
 ### 2020/02/20
 
-https://mdsboy.github.io/3Jam/2020-0220/
+https://mdsboy.github.io/3Jam/2020-0220/public
