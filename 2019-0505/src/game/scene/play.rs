@@ -279,7 +279,7 @@ impl Play {
             "「0和ゲーム」でStage{}まで進んだよ！",
             self.stage
         );
-        let url = "http://3jam0505.mds_boy.trap.show/";
+        let url = "https://mdsboy.github.io/3Jam/2019-0505/";
 
         let tweeturl = format!(
             "https://twitter.com/intent/tweet?hashtags=traP3jam&text={}&url={}",
