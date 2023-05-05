@@ -1,0 +1,13 @@
+type: runtime
+
+startup: |
+  yes | pacman -Sy rustup
+  rustup install stable
+  rustup default stable
+  curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+  npm install
+  npm run build
+
+entrypoint: node app.js
+
+http_proxy: 3000
