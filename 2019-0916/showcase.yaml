@@ -1,0 +1,7 @@
+type: "static"
+
+startup: |
+  npm install
+  npm run build
+
+work_dir: 'public'
