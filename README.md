@@ -24,7 +24,7 @@ https://mdsboy.github.io/3Jam/2018-0617/
 
 ### 0和ゲーム
 
-https://mdsboy.github.io/3Jam/2019-0505/
+https://mdsboy.github.io/3Jam/2019-0505/dist
 
 ### 新しい順に選ぶ
 
